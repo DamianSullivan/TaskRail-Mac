@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CEEEE1418EE793500CECCE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE1318EE793500CECCE5 /* Cocoa.framework */; };
+		7CEEEE1E18EE793500CECCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */; };
+		7CEEEE2018EE793500CECCE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEEE1F18EE793500CECCE5 /* main.m */; };
+		7CEEEE2718EE793500CECCE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEEE2618EE793500CECCE5 /* AppDelegate.m */; };
+		7CEEEE3318EE793500CECCE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE3218EE793500CECCE5 /* XCTest.framework */; };
+		7CEEEE3418EE793500CECCE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE1318EE793500CECCE5 /* Cocoa.framework */; };
+		7CEEEE3C18EE793500CECCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CEEEE3A18EE793500CECCE5 /* InfoPlist.strings */; };
+		7CEEEE3E18EE793500CECCE5 /* TaskRailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEEE3D18EE793500CECCE5 /* TaskRailTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CEEEE3518EE793500CECCE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CEEEE0818EE793500CECCE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CEEEE0F18EE793500CECCE5;
+			remoteInfo = TaskRail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CEEEE1018EE793500CECCE5 /* TaskRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CEEEE1318EE793500CECCE5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7CEEEE1618EE793500CECCE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7CEEEE1718EE793500CECCE5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7CEEEE1818EE793500CECCE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7CEEEE1B18EE793500CECCE5 /* TaskRail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskRail-Info.plist"; sourceTree = "<group>"; };
+		7CEEEE1D18EE793500CECCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7CEEEE1F18EE793500CECCE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CEEEE2118EE793500CECCE5 /* TaskRail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskRail-Prefix.pch"; sourceTree = "<group>"; };
+		7CEEEE2518EE793500CECCE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CEEEE2618EE793500CECCE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CEEEE3118EE793500CECCE5 /* TaskRailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskRailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CEEEE3218EE793500CECCE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7CEEEE3918EE793500CECCE5 /* TaskRailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskRailTests-Info.plist"; sourceTree = "<group>"; };
+		7CEEEE3B18EE793500CECCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7CEEEE3D18EE793500CECCE5 /* TaskRailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskRailTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CEEEE0D18EE793500CECCE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEEEE1418EE793500CECCE5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CEEEE2E18EE793500CECCE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEEEE3418EE793500CECCE5 /* Cocoa.framework in Frameworks */,
+				7CEEEE3318EE793500CECCE5 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CEEEE0718EE793500CECCE5 = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE1918EE793500CECCE5 /* TaskRail */,
+				7CEEEE3718EE793500CECCE5 /* TaskRailTests */,
+				7CEEEE1218EE793500CECCE5 /* Frameworks */,
+				7CEEEE1118EE793500CECCE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CEEEE1118EE793500CECCE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE1018EE793500CECCE5 /* TaskRail.app */,
+				7CEEEE3118EE793500CECCE5 /* TaskRailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CEEEE1218EE793500CECCE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE1318EE793500CECCE5 /* Cocoa.framework */,
+				7CEEEE3218EE793500CECCE5 /* XCTest.framework */,
+				7CEEEE1518EE793500CECCE5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CEEEE1518EE793500CECCE5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE1618EE793500CECCE5 /* AppKit.framework */,
+				7CEEEE1718EE793500CECCE5 /* CoreData.framework */,
+				7CEEEE1818EE793500CECCE5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7CEEEE1918EE793500CECCE5 /* TaskRail */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE2518EE793500CECCE5 /* AppDelegate.h */,
+				7CEEEE2618EE793500CECCE5 /* AppDelegate.m */,
+				7CEEEE1A18EE793500CECCE5 /* Supporting Files */,
+			);
+			path = TaskRail;
+			sourceTree = "<group>";
+		};
+		7CEEEE1A18EE793500CECCE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE1B18EE793500CECCE5 /* TaskRail-Info.plist */,
+				7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */,
+				7CEEEE1F18EE793500CECCE5 /* main.m */,
+				7CEEEE2118EE793500CECCE5 /* TaskRail-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CEEEE3718EE793500CECCE5 /* TaskRailTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE3D18EE793500CECCE5 /* TaskRailTests.m */,
+				7CEEEE3818EE793500CECCE5 /* Supporting Files */,
+			);
+			path = TaskRailTests;
+			sourceTree = "<group>";
+		};
+		7CEEEE3818EE793500CECCE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CEEEE3918EE793500CECCE5 /* TaskRailTests-Info.plist */,
+				7CEEEE3A18EE793500CECCE5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CEEEE0F18EE793500CECCE5 /* TaskRail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CEEEE4118EE793500CECCE5 /* Build configuration list for PBXNativeTarget "TaskRail" */;
+			buildPhases = (
+				7CEEEE0C18EE793500CECCE5 /* Sources */,
+				7CEEEE0D18EE793500CECCE5 /* Frameworks */,
+				7CEEEE0E18EE793500CECCE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskRail;
+			productName = TaskRail;
+			productReference = 7CEEEE1018EE793500CECCE5 /* TaskRail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CEEEE3018EE793500CECCE5 /* TaskRailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CEEEE4418EE793500CECCE5 /* Build configuration list for PBXNativeTarget "TaskRailTests" */;
+			buildPhases = (
+				7CEEEE2D18EE793500CECCE5 /* Sources */,
+				7CEEEE2E18EE793500CECCE5 /* Frameworks */,
+				7CEEEE2F18EE793500CECCE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CEEEE3618EE793500CECCE5 /* PBXTargetDependency */,
+			);
+			name = TaskRailTests;
+			productName = TaskRailTests;
+			productReference = 7CEEEE3118EE793500CECCE5 /* TaskRailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CEEEE0818EE793500CECCE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dsullivan;
+				TargetAttributes = {
+					7CEEEE3018EE793500CECCE5 = {
+						TestTargetID = 7CEEEE0F18EE793500CECCE5;
+					};
+				};
+			};
+			buildConfigurationList = 7CEEEE0B18EE793500CECCE5 /* Build configuration list for PBXProject "TaskRail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CEEEE0718EE793500CECCE5;
+			productRefGroup = 7CEEEE1118EE793500CECCE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CEEEE0F18EE793500CECCE5 /* TaskRail */,
+				7CEEEE3018EE793500CECCE5 /* TaskRailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CEEEE0E18EE793500CECCE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEEEE1E18EE793500CECCE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CEEEE2F18EE793500CECCE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEEEE3C18EE793500CECCE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CEEEE0C18EE793500CECCE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEEEE2718EE793500CECCE5 /* AppDelegate.m in Sources */,
+				7CEEEE2018EE793500CECCE5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CEEEE2D18EE793500CECCE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CEEEE3E18EE793500CECCE5 /* TaskRailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CEEEE3618EE793500CECCE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CEEEE0F18EE793500CECCE5 /* TaskRail */;
+			targetProxy = 7CEEEE3518EE793500CECCE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CEEEE1D18EE793500CECCE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7CEEEE3A18EE793500CECCE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CEEEE3B18EE793500CECCE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CEEEE3F18EE793500CECCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7CEEEE4018EE793500CECCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7CEEEE4218EE793500CECCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskRail/TaskRail-Prefix.pch";
+				INFOPLIST_FILE = "TaskRail/TaskRail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7CEEEE4318EE793500CECCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskRail/TaskRail-Prefix.pch";
+				INFOPLIST_FILE = "TaskRail/TaskRail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7CEEEE4518EE793500CECCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TaskRail.app/Contents/MacOS/TaskRail";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskRail/TaskRail-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TaskRailTests/TaskRailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7CEEEE4618EE793500CECCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TaskRail.app/Contents/MacOS/TaskRail";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskRail/TaskRail-Prefix.pch";
+				INFOPLIST_FILE = "TaskRailTests/TaskRailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CEEEE0B18EE793500CECCE5 /* Build configuration list for PBXProject "TaskRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CEEEE3F18EE793500CECCE5 /* Debug */,
+				7CEEEE4018EE793500CECCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CEEEE4118EE793500CECCE5 /* Build configuration list for PBXNativeTarget "TaskRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CEEEE4218EE793500CECCE5 /* Debug */,
+				7CEEEE4318EE793500CECCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CEEEE4418EE793500CECCE5 /* Build configuration list for PBXNativeTarget "TaskRailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CEEEE4518EE793500CECCE5 /* Debug */,
+				7CEEEE4618EE793500CECCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CEEEE0818EE793500CECCE5 /* Project object */;
+}
