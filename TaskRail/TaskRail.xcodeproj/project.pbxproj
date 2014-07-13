@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C8613D2197215F000DC2630 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8613D0197215F000DC2630 /* MainMenu.xib */; };
 		7C8613D6197222CD00DC2630 /* TRStatusMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8613D4197222CD00DC2630 /* TRStatusMenuViewController.m */; };
-		7C8613D7197222CD00DC2630 /* TRStatusMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8613D5197222CD00DC2630 /* TRStatusMenuViewController.xib */; };
 		7CEEEE1418EE793500CECCE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE1318EE793500CECCE5 /* Cocoa.framework */; };
 		7CEEEE1E18EE793500CECCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */; };
 		7CEEEE2018EE793500CECCE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEEE1F18EE793500CECCE5 /* main.m */; };
-		7CEEEE2718EE793500CECCE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEEE2618EE793500CECCE5 /* AppDelegate.m */; };
+		7CEEEE2718EE793500CECCE5 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEEE2618EE793500CECCE5 /* TRAppDelegate.m */; };
 		7CEEEE3318EE793500CECCE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE3218EE793500CECCE5 /* XCTest.framework */; };
 		7CEEEE3418EE793500CECCE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE1318EE793500CECCE5 /* Cocoa.framework */; };
 		7CEEEE3C18EE793500CECCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CEEEE3A18EE793500CECCE5 /* InfoPlist.strings */; };
@@ -31,10 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C8613D1197215F000DC2630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ../../../taskrail/TaskRail/TaskRail/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7C8613D3197222CD00DC2630 /* TRStatusMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRStatusMenuViewController.h; sourceTree = "<group>"; };
 		7C8613D4197222CD00DC2630 /* TRStatusMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStatusMenuViewController.m; sourceTree = "<group>"; };
-		7C8613D5197222CD00DC2630 /* TRStatusMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRStatusMenuViewController.xib; sourceTree = "<group>"; };
 		7CEEEE1018EE793500CECCE5 /* TaskRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEEEE1318EE793500CECCE5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7CEEEE1618EE793500CECCE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,8 +40,8 @@
 		7CEEEE1D18EE793500CECCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7CEEEE1F18EE793500CECCE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CEEEE2118EE793500CECCE5 /* TaskRail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskRail-Prefix.pch"; sourceTree = "<group>"; };
-		7CEEEE2518EE793500CECCE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7CEEEE2618EE793500CECCE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CEEEE2518EE793500CECCE5 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		7CEEEE2618EE793500CECCE5 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
 		7CEEEE3118EE793500CECCE5 /* TaskRailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskRailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEEEE3218EE793500CECCE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7CEEEE3918EE793500CECCE5 /* TaskRailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskRailTests-Info.plist"; sourceTree = "<group>"; };
@@ -116,12 +112,11 @@
 		7CEEEE1918EE793500CECCE5 /* TaskRail */ = {
 			isa = PBXGroup;
 			children = (
-				7CEEEE2518EE793500CECCE5 /* AppDelegate.h */,
-				7CEEEE2618EE793500CECCE5 /* AppDelegate.m */,
-				7CEEEE1A18EE793500CECCE5 /* Supporting Files */,
+				7CEEEE2518EE793500CECCE5 /* TRAppDelegate.h */,
+				7CEEEE2618EE793500CECCE5 /* TRAppDelegate.m */,
 				7C8613D3197222CD00DC2630 /* TRStatusMenuViewController.h */,
 				7C8613D4197222CD00DC2630 /* TRStatusMenuViewController.m */,
-				7C8613D5197222CD00DC2630 /* TRStatusMenuViewController.xib */,
+				7CEEEE1A18EE793500CECCE5 /* Supporting Files */,
 			);
 			path = TaskRail;
 			sourceTree = "<group>";
@@ -129,7 +124,6 @@
 		7CEEEE1A18EE793500CECCE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C8613D0197215F000DC2630 /* MainMenu.xib */,
 				7CEEEE1B18EE793500CECCE5 /* TaskRail-Info.plist */,
 				7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */,
 				7CEEEE1F18EE793500CECCE5 /* main.m */,
@@ -233,8 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CEEEE1E18EE793500CECCE5 /* InfoPlist.strings in Resources */,
-				7C8613D7197222CD00DC2630 /* TRStatusMenuViewController.xib in Resources */,
-				7C8613D2197215F000DC2630 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CEEEE2718EE793500CECCE5 /* AppDelegate.m in Sources */,
+				7CEEEE2718EE793500CECCE5 /* TRAppDelegate.m in Sources */,
 				7C8613D6197222CD00DC2630 /* TRStatusMenuViewController.m in Sources */,
 				7CEEEE2018EE793500CECCE5 /* main.m in Sources */,
 			);
@@ -278,14 +270,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C8613D0197215F000DC2630 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C8613D1197215F000DC2630 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
