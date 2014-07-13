@@ -8,10 +8,13 @@
 
 #import "AppDelegate.h"
 
+#import "TRStatusMenuViewController.h"
+
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+  self.statusMenuViewController = [[TRStatusMenuViewController alloc] initWithNibName:@"TRStatusMenuViewController" bundle:nil];
+  [self.statusMenuViewController loadView];
 }
 
 @end

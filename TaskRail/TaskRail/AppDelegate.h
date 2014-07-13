@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class TRStatusMenuViewController;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property(nonatomic, strong) IBOutlet TRStatusMenuViewController *statusMenuViewController;
 
 @end
