@@ -5,8 +5,7 @@
 @implementation TRAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
-  self.statusMenuViewController =
-      [[TRStatusMenuViewController alloc] initWithNibName:@"TRStatusMenuViewController" bundle:nil];
+  self.statusMenuViewController = [[TRStatusMenuViewController alloc] init];
   [self.statusMenuViewController loadView];
 }
 
