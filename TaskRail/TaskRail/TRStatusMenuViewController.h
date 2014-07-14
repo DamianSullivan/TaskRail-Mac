@@ -9,5 +9,6 @@
 @property(nonatomic, strong) NSStatusBar *statusBar;
 @property(nonatomic, strong) NSStatusItem *statusItem;
 @property(nonatomic, strong) TRDesktopSwitcher *desktopSwitcher;
+@property(nonatomic, strong) NSDictionary *desktopTodoLists;
 
 @end
