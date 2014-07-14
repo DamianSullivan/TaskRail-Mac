@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TRDesktopSwitcherDelegate.h"
+
 @interface TRDesktopSwitcher : NSObject
 
-- (void) observerDesktopSwitches;
+@property(nonatomic, strong) id<TRDesktopSwitcherDelegate> delegate;
+
+- (void) observeDesktopSwitches;
 
 @end

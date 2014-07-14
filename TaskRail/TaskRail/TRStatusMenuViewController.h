@@ -1,5 +1,13 @@
 #import <Cocoa/Cocoa.h>
 
-@interface TRStatusMenuViewController : NSViewController
+#import "TRDesktopSwitcherDelegate.h"
+
+@class TRDesktopSwitcher;
+
+@interface TRStatusMenuViewController : NSViewController<TRDesktopSwitcherDelegate>
+
+@property(nonatomic, strong) NSStatusBar *statusBar;
+@property(nonatomic, strong) NSStatusItem *statusItem;
+@property(nonatomic, strong) TRDesktopSwitcher *desktopSwitcher;
 
 @end

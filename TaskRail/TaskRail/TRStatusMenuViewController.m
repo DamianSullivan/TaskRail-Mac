@@ -1,12 +1,6 @@
 #import "TRStatusMenuViewController.h"
 #import "TRDesktopSwitcher.h"
 
-@interface TRStatusMenuViewController ()
-@property(nonatomic, strong) NSStatusBar *statusBar;
-@property(nonatomic, strong) NSStatusItem *statusItem;
-@property(nonatomic, strong) TRDesktopSwitcher *desktopSwitcher;
-@end
-
 @implementation TRStatusMenuViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -14,14 +8,20 @@
   if (self) {
     _statusBar = [NSStatusBar systemStatusBar];
     _desktopSwitcher = [[TRDesktopSwitcher alloc] init];
+    _desktopSwitcher.delegate = self;
   }
   return self;
 }
 
 - (void)loadView {
+  // TODO(dsullivan): This should all go somewhere else.
   self.statusItem = [self.statusBar statusItemWithLength:NSVariableStatusItemLength];
   [self.statusItem setTitle:@"Screen 1"];
-  [self.desktopSwitcher observerDesktopSwitches];
+  [self.desktopSwitcher observeDesktopSwitches];
+}
+
+- (void)activeSpaceDidChange:(NSNotification *)notification spaceId:(int)spaceId {
+  [self.statusItem setTitle:[NSString stringWithFormat:@"Desktop id: %d", spaceId]];
 }
 
 @end

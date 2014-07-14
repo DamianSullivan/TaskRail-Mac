@@ -30,7 +30,7 @@ static int getCurrentSpaceId() {
 
 @implementation TRDesktopSwitcher
 
-- (void) observerDesktopSwitches {
+- (void) observeDesktopSwitches {
   NSNotificationCenter *nc = [[NSWorkspace sharedWorkspace] notificationCenter];
   
   [nc addObserver:self
@@ -41,6 +41,7 @@ static int getCurrentSpaceId() {
 
 - (void) handleSpaceChanged:(NSNotification *)notification {
   NSLog(@"Space is now: %d", getCurrentSpaceId());
+  [self.delegate activeSpaceDidChange:notification spaceId:getCurrentSpaceId()];
 }
 
 @end
