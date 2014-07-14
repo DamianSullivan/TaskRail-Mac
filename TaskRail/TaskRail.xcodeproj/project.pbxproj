@@ -10,7 +10,6 @@
 		7C417A59197375F400866D20 /* TRDesktopSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C417A58197375F400866D20 /* TRDesktopSwitcher.m */; };
 		7C417A601973A44100866D20 /* TRStatusMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C417A5F1973A44100866D20 /* TRStatusMenuView.m */; };
 		7C417A631973C23F00866D20 /* TRTodoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C417A621973C23F00866D20 /* TRTodoList.m */; };
-		7C417A661973C45200866D20 /* TRDesktopTodoLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C417A651973C45200866D20 /* TRDesktopTodoLists.m */; };
 		7C8613D6197222CD00DC2630 /* TRStatusMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8613D4197222CD00DC2630 /* TRStatusMenuViewController.m */; };
 		7CEEEE1418EE793500CECCE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEEEE1318EE793500CECCE5 /* Cocoa.framework */; };
 		7CEEEE1E18EE793500CECCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CEEEE1C18EE793500CECCE5 /* InfoPlist.strings */; };
@@ -41,8 +40,6 @@
 		7C417A5F1973A44100866D20 /* TRStatusMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStatusMenuView.m; sourceTree = "<group>"; };
 		7C417A611973C23F00866D20 /* TRTodoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTodoList.h; sourceTree = "<group>"; };
 		7C417A621973C23F00866D20 /* TRTodoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTodoList.m; sourceTree = "<group>"; };
-		7C417A641973C45200866D20 /* TRDesktopTodoLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDesktopTodoLists.h; sourceTree = "<group>"; };
-		7C417A651973C45200866D20 /* TRDesktopTodoLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDesktopTodoLists.m; sourceTree = "<group>"; };
 		7C8613D3197222CD00DC2630 /* TRStatusMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRStatusMenuViewController.h; sourceTree = "<group>"; };
 		7C8613D4197222CD00DC2630 /* TRStatusMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStatusMenuViewController.m; sourceTree = "<group>"; };
 		7CEEEE1018EE793500CECCE5 /* TaskRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +129,6 @@
 				7C417A57197375F400866D20 /* TRDesktopSwitcher.h */,
 				7C417A58197375F400866D20 /* TRDesktopSwitcher.m */,
 				7C417A5B1973944B00866D20 /* TRDesktopSwitcherDelegate.h */,
-				7C417A641973C45200866D20 /* TRDesktopTodoLists.h */,
-				7C417A651973C45200866D20 /* TRDesktopTodoLists.m */,
 				7C417A5E1973A44100866D20 /* TRStatusMenuView.h */,
 				7C417A5F1973A44100866D20 /* TRStatusMenuView.m */,
 				7C8613D3197222CD00DC2630 /* TRStatusMenuViewController.h */,
@@ -274,7 +269,6 @@
 				7CEEEE2018EE793500CECCE5 /* main.m in Sources */,
 				7C417A631973C23F00866D20 /* TRTodoList.m in Sources */,
 				7C417A59197375F400866D20 /* TRDesktopSwitcher.m in Sources */,
-				7C417A661973C45200866D20 /* TRDesktopTodoLists.m in Sources */,
 				7C417A601973A44100866D20 /* TRStatusMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
