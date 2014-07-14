@@ -8,6 +8,26 @@
 
 #import "TRDesktopSwitcher.h"
 
+#include "CGSSpaces.h"
+
+static int getCurrentSpaceId() {
+  CFArrayRef spaces = CGSCopySpaces(CGSDefaultConnection, kCGSSpaceCurrent);
+  // CFArrayRef spaces = CGSCopySpaces(CGSDefaultConnection, kCGSSpaceAll);
+  uint32_t count = (uint32_t)CFArrayGetCount(spaces);
+  
+  int ii;
+  for (ii = count - 1; ii >= 0; ii--) {
+    CGSSpace spaceId = (CGSSpace)CFArrayGetValueAtIndex(spaces, ii);
+    if (CGSSpaceGetType(CGSDefaultConnection, spaceId) == kCGSSpaceSystem) {
+      continue;
+    }
+    return (int)spaceId;
+  }
+  
+  CFRelease(spaces);
+  return 0;
+}
+
 @implementation TRDesktopSwitcher
 
 - (void) observerDesktopSwitches {
@@ -20,7 +40,7 @@
 }
 
 - (void) handleSpaceChanged:(NSNotification *)notification {
-  NSLog(@"Space Changed");
+  NSLog(@"Space is now: %d", getCurrentSpaceId());
 }
 
 @end

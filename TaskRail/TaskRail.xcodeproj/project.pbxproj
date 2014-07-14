@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		7C417A57197375F400866D20 /* TRDesktopSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDesktopSwitcher.h; sourceTree = "<group>"; };
 		7C417A58197375F400866D20 /* TRDesktopSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDesktopSwitcher.m; sourceTree = "<group>"; };
+		7C417A5A19738AD300866D20 /* CGSSpaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSSpaces.h; sourceTree = "<group>"; };
 		7C8613D3197222CD00DC2630 /* TRStatusMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRStatusMenuViewController.h; sourceTree = "<group>"; };
 		7C8613D4197222CD00DC2630 /* TRStatusMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStatusMenuViewController.m; sourceTree = "<group>"; };
 		7CEEEE1018EE793500CECCE5 /* TaskRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +109,7 @@
 				7CEEEE1618EE793500CECCE5 /* AppKit.framework */,
 				7CEEEE1718EE793500CECCE5 /* CoreData.framework */,
 				7CEEEE1818EE793500CECCE5 /* Foundation.framework */,
+				7C417A5A19738AD300866D20 /* CGSSpaces.h */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
