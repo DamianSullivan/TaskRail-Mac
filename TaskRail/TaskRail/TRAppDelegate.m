@@ -1,12 +1,12 @@
 #import "TRAppDelegate.h"
 
-#import "TRStatusMenuViewController.h"
+#import "TRStatusItemViewController.h"
 
 @implementation TRAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
-  self.statusMenuViewController = [[TRStatusMenuViewController alloc] init];
-  [self.statusMenuViewController loadView];
+  // Replace this.
+  (void)[[[TRStatusItemViewController alloc] init] loadView];
 }
 
 @end

@@ -1,9 +1,9 @@
 #import <Cocoa/Cocoa.h>
 
-@class TRStatusMenuViewController;
+@class TRStatusItemViewController;
 
 @interface TRAppDelegate : NSObject<NSApplicationDelegate>
 
-@property(nonatomic, strong) IBOutlet TRStatusMenuViewController *statusMenuViewController;
+@property(nonatomic, strong) IBOutlet TRStatusItemViewController *statusItemViewController;
 
 @end
