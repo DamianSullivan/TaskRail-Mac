@@ -5,6 +5,7 @@
 @class TRDesktopSwitcher;
 @class TRStatusItemView;
 
-@interface TRStatusItemViewController : NSViewController<TRDesktopSwitcherDelegate>
+@interface TRStatusItemViewController
+    : NSViewController<TRDesktopSwitcherDelegate, NSTextViewDelegate, NSMenuDelegate>
 
 @end

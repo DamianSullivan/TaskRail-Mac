@@ -1,9 +1,9 @@
 #import <Cocoa/Cocoa.h>
 
-@interface TRStatusItemView : NSView
+@interface TRStatusItemView : NSView<NSTextFieldDelegate>
 
 @property(nonatomic, strong) NSStatusItem *statusItem;
 
-- (void)setTitle:(NSString *)newTitle;
+- (void)setTaskSpaceTitle:(NSString *)newTitle;
 
 @end

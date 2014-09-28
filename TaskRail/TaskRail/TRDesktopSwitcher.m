@@ -10,38 +10,38 @@
 
 #include "CGSSpaces.h"
 
-static int getCurrentSpaceId() {
-  CFArrayRef spaces = CGSCopySpaces(CGSDefaultConnection, kCGSSpaceCurrent);
-  // CFArrayRef spaces = CGSCopySpaces(CGSDefaultConnection, kCGSSpaceAll);
-  uint32_t count = (uint32_t)CFArrayGetCount(spaces);
-  
-  int ii;
-  for (ii = count - 1; ii >= 0; ii--) {
-    CGSSpace spaceId = (CGSSpace)CFArrayGetValueAtIndex(spaces, ii);
-    if (CGSSpaceGetType(CGSDefaultConnection, spaceId) == kCGSSpaceSystem) {
-      continue;
-    }
-    return (int)spaceId;
-  }
-  
-  CFRelease(spaces);
-  return 0;
-}
-
 @implementation TRDesktopSwitcher
 
-- (void) observeDesktopSwitches {
+- (void)observeDesktopSwitches {
   NSNotificationCenter *nc = [[NSWorkspace sharedWorkspace] notificationCenter];
-  
+
   [nc addObserver:self
          selector:@selector(handleSpaceChanged:)
              name:NSWorkspaceActiveSpaceDidChangeNotification
            object:[NSWorkspace sharedWorkspace]];
 }
 
-- (void) handleSpaceChanged:(NSNotification *)notification {
-  NSLog(@"Space is now: %d", getCurrentSpaceId());
-  [self.delegate activeSpaceDidChange:notification spaceId:getCurrentSpaceId()];
+- (void)handleSpaceChanged:(NSNotification *)notification {
+  NSLog(@"Space is now: %d", [self getCurrentSpaceId]);
+  [self.delegate activeSpaceDidChange:notification spaceId:[self getCurrentSpaceId]];
+}
+
+- (int)getCurrentSpaceId {
+  CFArrayRef spaces = CGSCopySpaces(CGSDefaultConnection, kCGSSpaceCurrent);
+  // CFArrayRef spaces = CGSCopySpaces(CGSDefaultConnection, kCGSSpaceAll);
+  uint32_t count = (uint32_t)CFArrayGetCount(spaces);
+
+  int i;
+  for (i = count - 1; i >= 0; i--) {
+    CGSSpace spaceId = (CGSSpace)CFArrayGetValueAtIndex(spaces, i);
+    if (CGSSpaceGetType(CGSDefaultConnection, spaceId) == kCGSSpaceSystem) {
+      continue;
+    }
+    return (int)spaceId;
+  }
+
+  CFRelease(spaces);
+  return 0;
 }
 
 @end

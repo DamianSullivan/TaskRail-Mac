@@ -6,6 +6,7 @@
 @interface TRStatusItemView ()
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, assign, getter=isMenuVisible) BOOL menuVisible;
+@property(nonatomic, strong) NSView *prevView;
 @end
 
 @implementation TRStatusItemView
@@ -15,8 +16,7 @@
 - (id)initWithFrame:(NSRect)frame {
   self = [super initWithFrame:frame];
   if (self) {
-    //_statusItem = nil;
-    _title = @"XXX";
+    _title = @"";
   }
   return self;
 }
@@ -58,7 +58,7 @@
                                attributes:[self titleAttributes]];
 }
 
-- (void)setTitle:(NSString *)newTitle {
+- (void)setTaskSpaceTitle:(NSString *)newTitle {
   if (![self.title isEqual:newTitle]) {
     self.title = newTitle;
     
@@ -71,6 +71,7 @@
   }
 }
 
+
 #pragma mark - NSMenuDelegate
 
 - (void)mouseDown:(NSEvent *)event {
@@ -79,6 +80,15 @@
 
 - (void)rightMouseDown:(NSEvent *)event {
   NSLog(@"Right Mouse Down");
+  
+  NSTextField *tf = [[NSTextField alloc] initWithFrame:[self titleBoundingRect]];
+  [tf setBackgroundColor:[NSColor clearColor]];
+  [tf setEditable:YES];
+
+  tf.delegate = self;
+  
+  self.prevView = self.statusItem.view;
+  [self.statusItem setView:tf];
 }
 
 - (void)menuWillOpen:(NSMenu *)menu {
@@ -86,9 +96,7 @@
 }
 
 - (void)menuDidClose:(NSMenu *)menu {
-  self.menuVisible = NO;
-  [menu setDelegate:nil];
-  [self setNeedsDisplay:YES];
+  NSLog(@"Menu Did Close");
 }
 
 @end

@@ -14,6 +14,8 @@
 
 @property(nonatomic, strong) id<TRDesktopSwitcherDelegate> delegate;
 
-- (void) observeDesktopSwitches;
+- (void)observeDesktopSwitches;
+
+- (int)getCurrentSpaceId;
 
 @end
